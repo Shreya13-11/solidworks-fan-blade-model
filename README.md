@@ -1,68 +1,120 @@
-# SolidWorks Fan Blade Model
+# SolidWorks — Fan Blade Model
 
-This repository contains a 3D model of a fan blade created in SolidWorks
+This repository contains a parametric 3D fan blade model designed in SolidWorks.  
+The project focuses on understanding the fundamentals of fan blade geometry, constraint-driven design, and feature-based modeling workflows that are commonly used in turbomachinery, cooling systems, and ventilation applications.
 
-The design focuses on understanding:
-- revolved boss feature
-- sketch dimensions and constraints
-- blade shaping using profiles
-- smooth transitions using fillets
-
-No assembly is included — this is a single part model.
+This model is intended primarily for learning, experimentation, and documentation of the design process.  
+No assembly is included — this repository contains a single part file.
 
 ---
 
-## 🔧 Modeling Process (Summary)
+## 🎯 Objectives
 
-### 1️⃣ Revolved Base
-A profile was sketched and then revolved 360° to create the main hub shape.
+The primary learning goals of this model were:
 
-Key dimensions used (from tutorial):
-- Length ≈ 350 mm
-- Front radius dome
-- Revolve angle: 360°
+- develop a fully-defined base sketch rather than relying on trial-and-error
+- construct a smooth hub profile using revolve operations
+- generate blade geometry using profiles, guide curves, and reference planes
+- maintain surface continuity and curvature quality
+- create geometry that can be easily edited and reused
+- export the design in formats compatible with multiple CAD tools
 
-### 2️⃣ Blade Sketch
-A second sketch was created on a side plane to define the blade profile.
-
-Important constraints included:
-- Tangent curves
-- Defined lengths
-- Angle for blade twist
-- Fully defined sketches
-
-### 3️⃣ Blade Formation
-Features such as loft / cut / fillet were applied to shape the blade smoothly.
+By structuring the model parametrically, dimensions can be updated without rebuilding the geometry from scratch.
 
 ---
 
-## 📁 Files
+## 📐 Modeling Overview
 
-| File | Description |
+
+
+### 1️⃣ Revolved Base (Hub)
+
+A 2D sketch was created to define the hub profile and then revolved 360°.  
+Key considerations included:
+
+- appropriate proportions of length and diameter
+- symmetry about the axis
+- smooth rounded nose profile
+- avoiding under-defined geometry
+
+The hub acts as the foundation for positioning the blade.
+
+---
+
+### 2️⃣ Blade Definition and Shaping
+
+The blade was constructed by sketching profiles on reference planes positioned along the hub.
+
+Important design aspects:
+
+- consistent blade thickness
+- gradual twist and curvature
+- transitions between sections that avoid sudden edges
+- fully-constrained reference geometry
+
+This approach allows the blade shape to evolve in a controlled and predictable way.
+
+---
+
+### 3️⃣ Refinement and Cleanup
+
+Fillets and edge transitions were applied to:
+
+- improve visual realism
+- reduce stress concentrations conceptually
+- mimic manufacturable geometry
+
+Although this is not an engineering-validated model, it follows good modeling habits.
+
+---
+
+## 📁 Repository Structure
+
+| Path | Description |
 |------|-------------|
-| `fan_blade.SLDPRT` | Original SolidWorks part |
-| `fan_blade.STEP` | Neutral format so others can open |
+| `/models/fan_blade.SLDPRT` | Native SolidWorks part file |
+| `/models/fan_blade.STEP`  | Neutral CAD export (for sharing and viewing) |
+| `/images/preview.png`     | Static preview or rendering (optional) |
 
-(Upload both inside a `models/` folder if possible.)
-
----
-
-## ▶ Preview
-Add a screenshot here later (optional):
-
-`/images/preview.png`
+If SolidWorks is unavailable, the STEP file can be opened using Fusion 360, FreeCAD, Onshape, or other CAD viewers.
 
 ---
 
-## 💡 Purpose
-This model is meant for:
+## ⚙️ Software Compatibility
 
-- CAD practice
-- Learning fan geometry
-- Understanding revolve + blade shaping
-- Sharing work publicly
+This project has been created in SolidWorks 2023.
 
-Feel free to study, download, and improve 👍# SolidWorks Fan Blade Model
+---
+
+## 🚀 Possible Extensions
+
+This model provides a foundation that can be expanded further:
+
+- attach the blade to a hub or shaft assembly
+- create motion animation showing rotational behavior
+- run CFD simulations to study airflow qualitatively
+- structural analysis to understand loading and deformation
+- redesign experiments to compare different blade shapes
+
+These improvements can transform the part into a more engineering-focused project.
+
+---
+
+## 📜 License and Usage
+
+This repository is shared for educational and personal learning purposes.  
+The model may be downloaded, modified, and reused with appropriate credit.
+
+Commercial use is not intended.
+
+---
+
+## 🙌 Author
+
+Created by **Shreya** as part of CAD learning and self-practice using SolidWorks.
+
+Feedback and suggestions are welcome.
+
 
 
 
