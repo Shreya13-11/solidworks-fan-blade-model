@@ -72,11 +72,8 @@ Although this is not an engineering-validated model, it follows good modeling ha
 
 | Path | Description |
 |------|-------------|
-| `/models/fan_blade.SLDPRT` | Native SolidWorks part file |
-| `/models/fan_blade.STEP`  | Neutral CAD export (for sharing and viewing) |
-| `/images/preview.png`     | Static preview or rendering (optional) |
-
-If SolidWorks is unavailable, the STEP file can be opened using Fusion 360, FreeCAD, Onshape, or other CAD viewers.
+|Model Fan blade.SLDPRT" | Native SolidWorks part file |
+|Model Fan blade.mp4"| dynnamic preview or motion study  |
 
 ---
 
